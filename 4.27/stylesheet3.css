@@ -1,0 +1,120 @@
+@charset "utf-8";
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    position: fixed;
+    z-index:10;
+    background-color: rgb(192, 134, 89);
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    height: 60px;
+}
+
+.header-right li{
+    float: right;
+    font-size: large;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 1s;
+    height: 45px;
+}
+
+.header-right li:hover{
+    background-color: bisque;
+}
+
+.main-wrapper{
+    padding: 120px 0 100px 80px;
+    width: 1170px;
+    height: 1000px;
+    margin:0 auto; 
+    text-align:left;
+    background-image: url();
+    background-size:cover;
+}
+
+.main-wrapper h4{
+    padding-top: 30px;
+}
+
+.main-wrapper h6{
+    font-style: normal;
+}
+
+.main-wrapper p{
+    padding-top: 20px;
+}
+
+.main-container{
+    margin-top: 70px;
+    margin:0 auto;
+  
+}
+
+.cal{
+    line-height: 24px;
+}
+
+.price p{
+    margin-top: 20px;
+}
+
+.total-price{
+    margin-top: 15px;
+
+}
+  
+.main-container p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 3px;
+}
+
+.submitbtn{
+    text-align: center;
+}
+  
+table{
+    font-style: normal;
+    padding-top: 30px;
+}
+  
+footer{
+    background-color: rgb(192, 134, 89);
+    border-top: 5px solid rgb(192, 182, 141);
+    height: 80px;
+}
+
+.footer-logo{
+    float: left;
+}
+
+.footer-logo img{
+    height: 80px;
+}
+
+.footer-left{
+    float: right;
+}
+
+.footer-left a{
+    display: block;
+    width: 140px;
+    color: black;
+    font-size: 13px;
+}

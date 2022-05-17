@@ -1,0 +1,129 @@
+@charset "utf-8";
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    position: fixed;
+    z-index:10;
+    background-color: rgb(192, 134, 89);
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    height: 60px;
+}
+
+.header-right li{
+    float: right;
+    font-size: large;
+    list-style: none;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: all 1s;
+    height: 45px;
+}
+
+.header-right li:hover{
+    background-color: bisque;
+}
+
+.top-wrapper{
+    height: 150px;
+    background-image: url(../img/sauna-ge73fd9b9b_1920.jpg);
+    color: rgb(253, 235, 208);
+    text-align: center;
+    background-size: cover;
+    padding: 180px 0 100px 0;
+}
+
+.item-wrapper{
+    height: 400px;
+    background-color: rgb(248, 227, 209);
+}
+
+.heading{
+    float: left;
+    padding-top: 70px;
+}
+
+.items{
+    padding-top: 100px;
+}
+
+.item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 13px;
+}
+
+.item img{
+    height: 120px;
+    width: 120px;
+}
+
+.btn {
+    margin-top: 50px;
+    margin-left: 550px;
+    display: inline-block;
+    color: black);
+    background-color: rgb(214, 205, 205);;
+    border-radius: 5px;
+    letter-spacing: 15px;
+    box-shadow: 0px 3px #341210;    
+}
+
+.btn a{
+    text-align: center;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+.btn:active {
+    box-shadow: none;
+    position: relative;
+    top:5px;
+}
+
+
+footer{
+    background-color: rgb(192, 134, 89);
+    border-top: 5px solid rgb(192, 182, 141);
+    height: 80px;
+}
+
+.footer-logo{
+    float: left;
+}
+
+.footer-logo img{
+    height: 80px;
+}
+
+.footer-left{
+    float: right;
+}
+
+.footer-left a{
+    display: block;
+    width: 140px;
+    color: black;
+    font-size: 13px;
+}

@@ -1,0 +1,192 @@
+@charset "utf-8";
+html, body,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 60px;
+    position: fixed;
+    z-index:10;
+    background-color: rgb(192, 134, 89);
+    opacity: 0.8;
+    width: 100%;
+    text-align: center;
+}
+
+.header-left{
+    float: left;
+}
+
+.header-left img{
+    height: 60px;
+}
+
+.header-right{
+    float: right;
+    height: 60px;
+    padding-right: 25px;
+    line-height: 60px;
+}
+
+.login{
+    text-align: center;
+    width: 80px;
+}
+
+.header-right :hover{
+    background-color: rgb(236, 168, 90);
+    cursor: pointer;
+}
+
+/*モーダル*/
+.login-modal-wrapper, .signup-modal-wrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    display: none;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+    text-align: center;
+  }
+  
+  .fa-times {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(128, 128, 128, 0.46);
+    cursor: pointer;
+  }
+  
+  #signup-form, #login-form {
+    width: 100%;
+  }
+  
+  #signup-form h2, #login-form h2 {
+    color: #5f5d60;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+  }
+  
+  #signup-form input, #login-form input {
+    width: 320px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+  }
+  
+  #submit-btn {
+    display: inline-block;
+    padding: 14px 140px;
+    background-color: #fecc43;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto;
+    cursor: pointer;
+  }
+
+.top-wrapper{
+    height: 320px;
+    background-image: url(../img/sauna-ge73fd9b9b_1920.jpg);
+    color: rgb(255, 239, 216);
+    text-align: center;
+    background-size: cover;
+    padding: 180px 0 100px 0;
+}
+
+.item-wrapper{
+    height: 700px;
+    background-color: rgb(240, 228, 217);
+}
+
+.heading{
+    text-align: center;
+    padding-top: 60px;
+}
+
+.goods{
+    color: #fff;
+    background: #e3cb6a;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.items{
+    padding-top: 50px;
+}
+
+.item{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+.item :hover{
+    opacity: 0.5;
+}
+
+.item img{
+    width: 250px;
+    height: 250px;
+}
+
+
+
+.item a{
+    color: black;
+    text-decoration: none;
+}
+
+.item a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+footer{
+    background-color: rgb(192, 134, 89);
+    border-top: 5px solid rgb(192, 182, 141);
+    height: 80px;
+}
+
+.footer-logo{
+    float: left;
+}
+
+.footer-logo img{
+    height: 80px;
+}
+
+.footer-left{
+    float: right;
+}
+
+.footer-left a{
+    display: block;
+    width: 140px;
+    color: black;
+    font-size: 13px;
+}

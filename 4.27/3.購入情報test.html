@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Saunoa｜情報入力</title>
+        <link rel="stylesheet" href="stylesheet3.css">
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="Java/script.3.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <div class="header-left">
+                <img src="../img/fa90e53b80934ec6926648122bdfdfc6.png" alt="#">
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>News</li>
+                    <li>Shopping</li>
+                    <li>About us</li>
+                    <li>Recruit</li>
+                </ul>
+            </div>
+        </header>
+        <div class="main-wrapper">
+            <div class="info">
+            </div>
+            <div class="main-container">
+                <h2>購入情報入力</h2>
+
+                <div class="cal">
+                <form method="post" oninput="result.value= 3600 * parseInt(num2.value);">
+                    <div class="price">
+                      <p class="quantity">数量</p>
+                      <input type="number" name="num2" value="1" min="1" max="10" />
+                      <div class="total-cash">
+                        <span class="total-icon">合計金額：　 </span><span>¥</span><output name="result">3,600</output>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <h4>●お届け先情報</h4>
+                <p>名前</p>
+                <input type="text" placeholder="姓">
+                <input type="text" placeholder="名">
+                <div id="app">
+                    <form>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>郵便番号</th>
+                                    <td>
+                                        <input id="input" class="zipcode" type="text" name="zipcode" value="" placeholder="例)8120012">
+                                        <button id="search" type="button">住所検索</button>
+                                        <p id="error"></p>
+                                    </td>
+                                </tr>
+                
+                                <tr>
+                                    <th>都道府県</th>
+                                    <td><input id="address1" type="text" name="address1" value=""></td>
+                                </tr>
+                
+                                <tr>
+                                    <th>市区町村</th>
+                                    <td><input id="address2" type="text" name="address2" value=""></td>
+                                </tr>
+                
+                                <tr>
+                                    <th>町域</th>
+                                    <td><input id="address3" type="text" name="address3" value=""></td>
+                                </tr>
+                                <tr>
+                                    <th>番地・マンション名</th>
+                                    <td><input type="text"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+                <p>電話番号</p>
+                <input type="text" placeholder="電話番号">
+                <h4>●連絡先情報</h4>
+                <input type="text" placeholder="メールアドレス">
+                <h4>●お支払情報</h4>
+                <h6>お支払はクレジットカードのみとなっております。</h6>
+                <img src="../img/new_visa.gif" alt="#">
+                <img src="../img/logo_mastercard.gif" alt="#">
+                <p>カード名義人</p>
+                <input type="text" placeholder="SAUNA TARO">
+                <p>カード番号</p>
+                <input type="text" placeholder="123456789" required>
+                <p>有効期限</p>
+                <input type="text" placeholder="1" size="3">月
+                <input type="text" placeholder="2022" size="7">年
+                </select>
+                <button>送信</button>
+                <p><a href="4.サンキュー画面.html"><input type="submit" value="送信"></a></p>
+           </div>
+        </div>
+
+        <footer>
+            <div class="footer-logo">
+                <img src="../img/fa90e53b80934ec6926648122bdfdfc6.png" alt="#">
+            </div>
+            <div class="footer-left">
+                <a href="#">お問い合わせ</a>
+                <a href="#">店舗情報</a>
+                <a href="#">プライバシーポリシー</a>
+            </div>
+            
+        </footer>
+
+        <script src="./Java/zipcode.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/fetch-jsonp@1.1.3/build/fetch-jsonp.min.js"></script>
+    </body>
